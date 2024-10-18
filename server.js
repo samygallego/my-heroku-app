@@ -7,7 +7,8 @@ const port = process.env.PORT || 3000;
 app.get('/releves_meteo', async (req, res) => {
     try {
         // URL de l'API externe
-        const apiUrl = 'https://data.ffvl.fr/api?base=balises&r=releves_meteo&key=2e97bc941e0b843cbb8236a6e4d28ddf';
+const apiKey = process.env.MA_CLE_API;
+const apiUrl = `https://data.ffvl.fr/api?base=balises&r=releves_meteo&key=${apiKey}`;
         
         // Faire la requête GET vers l'API externe
         const response = await axios.get(apiUrl);
