@@ -1,8 +1,10 @@
 const express = require('express');
 const axios = require('axios'); // Utiliser axios pour faire des requêtes HTTP
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 // Route qui va faire office de proxy vers l'API externe
 app.get('/releves_meteo', async (req, res) => {
     try {
