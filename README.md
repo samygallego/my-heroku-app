@@ -77,8 +77,16 @@ Express
 Axios
 CORS
 
+## Maintenir l'application active avec UptimeRobot
+
+Pour éviter que l'application ne se mette en veille après une période d'inactivité (comportement standard des services gratuits sur Render), vous pouvez utiliser un service de surveillance tel qu'UptimeRobot. UptimeRobot enverra des requêtes automatiques à intervalles réguliers pour garder votre application en ligne.
+
+Cette approche permet de réduire les délais de réponse dus à la mise en veille de l'application sur Render, tout en restant dans les limites du plan gratuit. Vous pouvez ajuster la fréquence des pings en fonction de vos besoins pour équilibrer la réactivité de l'application et l'utilisation des ressources gratuites.
+
 ## Contribuer 
 
 Les contributions sont les bienvenues ! N'hésitez pas à faire un fork du projet et à soumettre une pull request.
+
+
 
 
